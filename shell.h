@@ -9,6 +9,6 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-void ssprintf(char *input, int streams)
+void ssprintf(char *input, int streams);
 
 #endif

@@ -12,5 +12,7 @@
 void ssprintf(char *input, int streams);
 int ssputchar(char c);
 void ssprompt(void);
+char *userinput(void);
+int execpath(char *arg[]);
 
 #endif

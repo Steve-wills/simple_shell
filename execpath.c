@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  * execpath - executes a command in a new process
  * @arg: argument taken
@@ -11,22 +10,18 @@ int execpath(char *arg[])
 	int status;
 
 	if (arg == NULL || arg[0] == NULL || arg[0][0] == '\0')
-	{
 		ssprintf("invalid. \n");
 		return (-1);
-	}
 	c_pid = fork();
 	if (c_pid < 0)
-	{
 		perror("fork failed");
 		return (-1);
-	}
 	if (c_pid == 0)
 	{
 		if (execve(arg[0], arg) == -1
 		{
 			perror("Error");
-			freetok(arg);
+			freetoks(arg);
 			exit(EXIT_FAILURE);
 		}
 	}
@@ -42,9 +37,7 @@ int execpath(char *arg[])
 		while
 		{
 		(!WIFEXITED(status) && !WIFSIGNALED(status));
-		}
 		if (WIFEXITED(status))
-		{
 			return (WEXITSTATUS(status));
 		}
 	}

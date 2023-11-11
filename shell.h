@@ -14,5 +14,6 @@ int ssputchar(char c);
 void ssprompt(void);
 char *userinput(void);
 int execpath(char *arg[]);
+char **_strngtok(char *str, char *dlm);
 
 #endif

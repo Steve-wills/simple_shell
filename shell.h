@@ -17,5 +17,6 @@ int execpath(char *arg[]);
 char **_strngtok(char *str, char *dlm);
 void freetoks(char **toks);
 void print_toks(char **tok);
+int ssatoi(char *str)
 
 #endif

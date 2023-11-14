@@ -10,13 +10,13 @@ int ssatoi(char *str)
 	int i, sign = 1, flag = 0, output;
 	unsigned int result = 0;
 
-	for(i = 0; str[i] != '\0' && flag != 2; i++)
+	for (i = 0; str[i] != '\0' && flag != 2; i++)
 	{
 	if (str[i] == '-')
 		sign *= -1;
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			flag = 1:
+			flag = 1 :
 			result *= 10;
 			result += (str[i] - '0');
 		}

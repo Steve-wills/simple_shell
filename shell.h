@@ -22,5 +22,6 @@ int ssatoi(char *str);
 int _cdir(char **arg);
 int p_env(char **str);
 int exit_env(char **str);
+char **strgtokn(char *str, char *dlm);
 
 #endif

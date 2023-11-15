@@ -23,5 +23,8 @@ int _cdir(char **arg);
 int p_env(char **str);
 int exit_env(char **str);
 char **strgtokn(char *str, char *dlm);
+void ssputs(char *str);
+int _strlen(char *str);
+char *_sub_str(char *hay, char *pin);
 
 #endif

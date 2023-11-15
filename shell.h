@@ -31,6 +31,7 @@ int exec_builtins(char **str);
 char *get_streams(void);
 void interactive(void);
 void non_interactive(void);
+int main(void);
 
 /**
  * struct BuiltInCommands - Structure to hold information

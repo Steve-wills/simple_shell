@@ -17,7 +17,7 @@ char *get_streams(void)
 	}
 	while ((readByts = read(STDIN_FILENO, &c, 1)) > 0)
 	{
-		if (c == '\n' || c = EOF)
+		if (c == '\n' || c == EOF)
 			break;
 		inputs[idx++] = c;
 		if (idx >= (bufsyz - 1))

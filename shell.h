@@ -28,6 +28,10 @@ int _strlen(char *str);
 char *_sub_str(char *hay, char *pin);
 void _termin(ssize_t num, char *bufa);
 int exec_builtins(char **str);
+char *get_streams(void);
+void interactive(void);
+void non_interactive(void);
+
 /**
  * struct BuiltInCommands - Structure to hold information
  * @id: The name of the built-in command

@@ -26,6 +26,18 @@ char **strgtokn(char *str, char *dlm);
 void ssputs(char *str);
 int _strlen(char *str);
 char *_sub_str(char *hay, char *pin);
-void _termin(ssize_t num, char *bufa)
-int exec_builtins(char **str)
+void _termin(ssize_t num, char *bufa);
+int exec_builtins(char **str);
+/**
+ * struct BuiltInCommands - Structure to hold information
+ * @id: The name of the built-in command
+ * @functn: A function pointer to the corresponding built-in function
+ */
+
+typedef struct BuiltInCommands
+{
+	const char *id;
+	int (*functn)(char **);
+} cmd;
+
 #endif

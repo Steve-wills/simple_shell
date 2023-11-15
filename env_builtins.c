@@ -8,12 +8,13 @@
 int p_env(char **str)
 {
 	int i = 0;
+
 	(void)str;
 
 	while (environ[i])
 	{
 		ssputs(environ[i]);
-		i++
+		i++;
 	}
 
 	return (0);

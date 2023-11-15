@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+extern char **environ;
 void ssprintf(char *input, int streams);
 int ssputchar(char c);
 void ssprompt(void);
@@ -17,9 +18,9 @@ int execpath(char *arg[]);
 char **_strngtok(char *str, char *dlm);
 void freetoks(char **toks);
 void print_toks(char **tok);
-int ssatoi(char *str)
-int _cdir(char **arg)
-int p_env(char **str)
-int exit_env(char **str)
+int ssatoi(char *str);
+int _cdir(char **arg);
+int p_env(char **str);
+int exit_env(char **str);
 
 #endif

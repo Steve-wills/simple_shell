@@ -16,7 +16,7 @@ int ssatoi(char *str)
 		sign *= -1;
 		if (str[i] >= '0' && str[i] <= '9')
 		{
-			flag = 1 :
+			flag = 1;
 			result *= 10;
 			result += (str[i] - '0');
 		}

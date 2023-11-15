@@ -26,5 +26,6 @@ char **strgtokn(char *str, char *dlm);
 void ssputs(char *str);
 int _strlen(char *str);
 char *_sub_str(char *hay, char *pin);
-
+void _termin(ssize_t num, char *bufa)
+int exec_builtins(char **str)
 #endif

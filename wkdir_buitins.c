@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
  * _cdir - a function that changes the working directory
- * @arg : arguments
+ * @argv : arguments
  *
  * Return: 1 on success, 0 on failure
  */

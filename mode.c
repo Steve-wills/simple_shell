@@ -47,8 +47,11 @@ void non_interactive(void)
 
 	do {
 		ssprompt();
+		fflush(stdout);
+
 		stream = get_streams();
 		terminal = strtok(stream, ";");
+
 		while (terminal)
 		{
 			str = _strgtokn(terminal, "/n");

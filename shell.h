@@ -34,14 +34,14 @@ void non_interactive(void);
 int main(void);
 
 /**
- * struct BuiltInCommands - Structure to hold information
- * @id: The name of the built-in command
+ * struct builtInCommands - Structure to hold information
+ * @ID: The name of the built-in command
  * @functn: A function pointer to the corresponding built-in function
  */
 
-typedef struct BuiltInCommands
+typedef struct builtInCommands
 {
-	const char *id;
+	const char *ID;
 	int (*functn)(char **);
 } cmd;
 

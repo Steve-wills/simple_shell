@@ -10,15 +10,19 @@ int execpath(char *arg[])
 	int status;
 
 	if (arg == NULL || arg[0] == NULL || arg[0][0] == '\0')
-		ssprintf("invalid. \n");
+	{
+		printf("invalid command.\n");
 		return (-1);
+	}
 	c_pid = fork();
 	if (c_pid < 0)
+	{
 		perror("fork failed");
 		return (-1);
+	}
 	if (c_pid == 0)
 	{
-		if (execve(arg[0], arg) == -1
+		if (execvp(arg[0], arg) == -1)
 		{
 			perror("Error");
 			freetoks(arg);
@@ -33,13 +37,9 @@ int execpath(char *arg[])
 				perror("waitpid failure");
 				return (-1);
 			}
-		}
-		while
-		{
-		(!WIFEXITED(status) && !WIFSIGNALED(status));
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 		if (WIFEXITED(status))
 			return (WEXITSTATUS(status));
-		}
 	}
 		return (0);
 }

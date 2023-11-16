@@ -10,7 +10,7 @@ char *get_streams(void)
 	char *xtra_input = NULL, c;
 	ssize_t readByts;
 
-	if (!nputs)
+	if (!inputs)
 	{
 		perror("memory allocation error");
 		exit(EXIT_FAILURE);

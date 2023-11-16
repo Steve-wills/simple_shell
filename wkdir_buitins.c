@@ -5,7 +5,7 @@
  *
  * Return: 1 on success, 0 on failure
  */
-int _cdir(char **arg)
+int _cdir(char **argv)
 {
 	char *nw_path = argv[1];
 	char *cr_path;

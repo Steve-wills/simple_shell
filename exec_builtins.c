@@ -9,7 +9,7 @@ int exec_builtins(char **str)
 {
 	cmd builtins[] = {
 		{"env", &p_env},
-		{"exit", &exec_exit},
+		{"exit", &exit_env},
 		{"cd", &_cdir},
 		{NULL, NULL}
 	};

@@ -19,7 +19,7 @@ char **_strngtok(char *str, char *dlm);
 void freetoks(char **toks);
 void print_toks(char **tok);
 int ssatoi(char *str);
-int _cdir(char **arg);
+int _cdir(char **argv);
 int p_env(char **str);
 int exit_env(char **str);
 char **strgtokn(char *str, char *dlm);

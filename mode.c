@@ -15,6 +15,8 @@ void interactive(void)
 
 	do {
 		ssprompt();
+		fflush(stdout);
+
 		stream = userinput();
 		terminal = strtok(stream, ";");
 
